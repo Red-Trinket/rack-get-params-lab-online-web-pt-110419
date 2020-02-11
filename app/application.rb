@@ -22,7 +22,7 @@ class Application
       search_term = req.params["q"]
       
       if @@items.include?(search_term)
-        
+        resp.write 
     else
       resp.write "Path Not Found"
     end
