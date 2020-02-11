@@ -44,7 +44,7 @@ class Application
     if @@items.include?(item)
         @@cart << item 
     else 
-        resp.write "Sorry, that's not one of our items."
+      return "Sorry, that's not one of our items."
     end 
   end 
 end
