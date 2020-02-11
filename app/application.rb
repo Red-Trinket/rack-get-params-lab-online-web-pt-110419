@@ -40,5 +40,11 @@ class Application
     end
   end
   
-  def handle_add
+  def handle_add(item)
+    if @@items.include?(item)
+        @@cart << item 
+    else 
+        resp.write "Sorry, that's not one of our items."
+    end 
+  end 
 end
